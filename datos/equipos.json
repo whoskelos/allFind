@@ -1,0 +1,26 @@
+[
+	{
+	  "id_equipo": "001",
+	  "modelo": "Acer Aspire 3",
+	  "precio": "699",
+	  "so": "Windows 11",
+	  "cpu": "i7-1165G7",
+	  "ram": "16GB",
+	  "almacenamiento": "512GB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "acer-aspire-3-a315.webp"
+	}
+  ]
