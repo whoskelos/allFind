@@ -1,0 +1,77 @@
+[
+	{
+	  "id_equipo": "001",
+	  "portatil":"si",
+	  "modelo": "Acer Aspire 3",
+	  "precio": "699",
+	  "so": "Windows 11",
+	  "cpu": "i7-1165G7",
+	  "ram": "16GB",
+	  "almacenamiento": "512GB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "acer-aspire-3-a315.webp"
+	},
+	{
+	  "id_equipo": "002",
+	  "portatil":"si",
+	  "modelo": "PcCom Revolt One",
+	  "precio": "994.90",
+	  "so": "Windows 11",
+	  "cpu": "i5-11400H",
+	  "ram": "16GB",
+	  "almacenamiento": "512GB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "pccom-revolt-one.webp"
+	},
+	{
+	  "id_equipo": "003",
+	  "portatil":"si",
+	  "modelo": "Lenovo IdeaPad 3",
+	  "precio": "519.99",
+	  "so": "Windows 11",
+	  "cpu": "i5-1135G7",
+	  "ram": "8GB",
+	  "almacenamiento": "512GB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "lenovo-ideapad-3.webp"
+	}
+  ]

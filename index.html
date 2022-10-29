@@ -1,131 +1,132 @@
 <!doctype html>
-<html lang="es-ES">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bienvnido a AllFind</title>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <title>Bienvenido AllFind</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+        <script src="/js/scripts.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <!--Menu de navegacion-->
-        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="#" class="flex items-center">
-                    <img src="/img/lupa_00.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">AllFind</span>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/lupa_00.png" alt="logo allFind" width="50">
+                    AllFind
                 </a>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul
-                        class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                                aria-current="page">Home</a>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
                         </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/equipos.html">Equipos</a>
                         </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Equipos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
                         </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-
     </header>
-    <main class="main">
+
+    <main>
         <div class="container">
-            <!--Carusel del home-->
-            <div id="controls-carousel" class="relative" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
-                        data-carousel-item="">
-                        <img src="img/imagen-1.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
-                        data-carousel-item="active">
-                        <img src="img/imagen-2.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
-                        data-carousel-item="">
-                        <img src="img/imagen-3.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
-                        data-carousel-item="">
-                        <img src="img/imagen-4.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <div class="row mt-3">
+                <!--Carusel-->
+                <div class="col-md-6">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/imagen-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/imagen-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/imagen-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <!-- Slider controls -->
-                <button type="button"
-                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev="">
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                            </path>
-                        </svg>
-                        <span class="sr-only">Anterior</span>
-                    </span>
-                </button>
-                <button type="button"
-                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next="">
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                            </path>
-                        </svg>
-                        <span class="sr-only">Siguiente</span>
-                    </span>
-                </button>
+                <!--Seccion con el boton para redirigir al formulario-->
+                <div class="col-md-6 mt-3 d-flex flex-column justify-content-center align-items-center text-center">
+                    <h1>HOLA FINDER! <img src="img/saludo.png" alt="icono saludo" class="img-home"></h1>
+                    <p class="fs-2">Encuentra el ordenador que buscas</p>
+                    <p class="fs-3">Rellena el formulario y te ayudamos</p>
+                    <button type="button" class="btn btn-primary">Rellenar</button>
+                </div>
             </div>
-
+            <div class="row mt-5">
+                <div class="col-md-12 text-center mb-3">
+                    <h2>Equipos mejores valorados</h2>
+                </div>
+                <div class="col-md-12 mas-valorados d-flex flex-wrap justify-content-around mb-2">
+                    <div class="cajaEquipo">
+                        <span class="fw-bold fs-5 text-uppercase">Nombre modelo</span>
+                        <img src="img/acer-aspire-3-a315.webp" alt="foto portatil">
+                    </div>
+                    <div class="cajaEquipo">
+                        <span class="fw-bold fs-5 text-uppercase">Nombre modelo</span>
+                        <img src="img/acer-aspire-3-a315.webp" alt="foto portatil">
+                    </div>
+                    <div class="cajaEquipo">
+                        <span class="fw-bold fs-5 text-uppercase">Nombre modelo</span>
+                        <img src="img/acer-aspire-3-a315.webp" alt="foto portatil">
+                    </div>
+                </div>
+            </div>
         </div>
-
-
     </main>
-    <footer class="footer">
 
+    <!--Footer-->
+    <footer class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center bg-primary text-light p-3">
+                    <p>Designed by: Kelvin Guerrero Mite</p>
+                    <p>Todos los derechos reservados al autor de la pagina.</p>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

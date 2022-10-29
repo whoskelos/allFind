@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.img-home{
+    width: 50px !important;
+}
+
+.mas-valorados img{
+    width: 190px !important;
+}
+
+.cajaEquipo{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.tituloEquipos {
+    font-family: 'Fira Sans', sans-serif !important;
+}
