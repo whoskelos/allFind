@@ -6,6 +6,7 @@ class Equipo{
         so,
         cpu,
         ram,
+        valoracion,
         almacenamiento,
         opiniones,
         imagen
@@ -16,6 +17,7 @@ class Equipo{
         this.so = so || "Sin SO asignado";
         this.cpu = cpu || "CPU no asignada";
         this.ram = ram || "RAM no asignada";
+        this.valoracion = valoracion || "Equipo sin valoraciones";
         this.almacenamiento = almacenamiento || "Almacenamiento no asignado";
         this.opiniones = opiniones;
         this.imagen = imagen || "sinImagen.png";

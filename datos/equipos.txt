@@ -7,6 +7,7 @@
 	  "so": "Windows 11",
 	  "cpu": "i7-1165G7",
 	  "ram": "16GB",
+	  "valoracion": "3",
 	  "almacenamiento": "512GB",
 	  "opiniones": [
 		{
@@ -32,6 +33,7 @@
 	  "so": "Windows 11",
 	  "cpu": "i5-11400H",
 	  "ram": "16GB",
+	  "valoracion": "4",
 	  "almacenamiento": "512GB",
 	  "opiniones": [
 		{
@@ -57,6 +59,7 @@
 	  "so": "Windows 11",
 	  "cpu": "i5-1135G7",
 	  "ram": "8GB",
+	  "valoracion": "2",
 	  "almacenamiento": "512GB",
 	  "opiniones": [
 		{
@@ -73,5 +76,57 @@
 		}
 	  ],
 	  "imagen": "lenovo-ideapad-3.webp"
+	},
+	{
+	  "id_equipo": "004",
+	  "portatil":"si",
+	  "modelo": "HP 15S",
+	  "precio": "499",
+	  "so": "Windows 11",
+	  "cpu": "i3-1115G4",
+	  "ram": "8GB",
+	  "valoracion": "4.5",
+	  "almacenamiento": "256GB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "hp-15s.webp"
+	},
+	{
+	  "id_equipo": "005",
+	  "portatil":"si",
+	  "modelo": "Lenovo IdeaPad 3",
+	  "precio": "419",
+	  "so": "Windows 11",
+	  "cpu": "i3-1115G4",
+	  "ram": "8GB",
+	  "valoracion": "4.5",
+	  "almacenamiento": "256GB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "lenovo-ideapad-3-15itl6.webp"
 	}
   ]
