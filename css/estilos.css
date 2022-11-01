@@ -2,27 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
-body{
+body {
     font-family: 'Roboto', sans-serif !important;
 }
 
-.img-home{
+.img-home {
     width: 50px !important;
 }
 
-.mas-valorados img{
+.mas-valorados img {
     width: 190px !important;
 }
 
-.cajaEquipo{
+.cajaEquipo {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
+}
+
+.cajaEquipo img {
+    width: 300px;
 }
 .tituloEquipos {
     font-family: 'Fira Sans', sans-serif !important;
 }
 
-.titulo-valorados{
+.titulo-valorados {
     font-family: 'Fira Sans', sans-serif !important;
+}
+
+.titulo-forms {
+    font-family: 'Fira Sans', sans-serif !important;
+}
+
+.divFormBusqueda {
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 15px;
+    background: #ADE1FF;
 }

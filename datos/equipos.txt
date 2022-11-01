@@ -85,7 +85,7 @@
 	  "so": "Windows 11",
 	  "cpu": "i3-1115G4",
 	  "ram": "8GB",
-	  "valoracion": "4.5",
+	  "valoracion": "3",
 	  "almacenamiento": "256GB",
 	  "opiniones": [
 		{
@@ -128,5 +128,84 @@
 		}
 	  ],
 	  "imagen": "lenovo-ideapad-3-15itl6.webp"
+	},
+	{
+	  "id_equipo": "006",
+	  "portatil":"si",
+	  "modelo": "ASUS TUF Gaming A15",
+	  "precio": "1799",
+	  "so": "",
+	  "cpu": "Ryzen 7 6800H",
+	  "ram": "16GB",
+	  "valoracion": "5",
+	  "almacenamiento": "1TB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "asus-tuf-gaming-a15.webp"
+	},
+	{
+	  "id_equipo": "007",
+	  "portatil":"no",
+	  "modelo": "Arizone Frey PC",
+	  "precio": "1098",
+	  "so": "Windows 11",
+	  "cpu": "Ryzen 3 4100",
+	  "ram": "16GB",
+	  "valoracion": "0",
+	  "almacenamiento": "1TB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "arizone-frey-pc.webp"
+	},
+		{
+	  "id_equipo": "008",
+	  "portatil":"no",
+	  "modelo": "PcCom Platinum",
+	  "precio": "3884.67",
+	  "so": "",
+	  "cpu": "Intel Core i9-12900K",
+	  "ram": "32GB",
+	  "valoracion": "4",
+	  "almacenamiento": "1TB",
+	  "opiniones": [
+		{
+		  "id_opinion": "001",
+		  "usuario": "Kelvin",
+		  "puntuacion": "5",
+		  "comentario": "Muy buen equipo"
+		},
+		{
+		  "id_opinion": "002",
+		  "usuario": "Manuel",
+		  "puntuacion": "4",
+		  "comentario": "Muy buen equipo"
+		}
+	  ],
+	  "imagen": "pccom-platinum.webp"
 	}
+
   ]

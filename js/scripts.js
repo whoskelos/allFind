@@ -5,6 +5,9 @@ onload = () => {
     if (document.getElementById("masValorados")) {
         pintarMasValorados();
     }
+    document.getElementById("btn-rellenar-form").addEventListener("click",() => {
+        location.href = "/form-busqueda.html";
+    });
 };
 
 function cargarEquipos() {
@@ -45,15 +48,12 @@ function pintarEquipos(lista) {
 function pintarMasValorados() {
     let equiposMasValorados = listaEquipos.filter((ele) => ele.valoracion > 3);
     //localizo el div donde los voy a pintar
-    let divMasValorados = document.getElementById("masValorados");
+    let divMasValorados = document.getElementById("cajaEquiposValorados");
     equiposMasValorados.forEach((equipo) => {
         divMasValorados.innerHTML += `
-        <div class="col-md-12 mas-valorados d-flex flex-wrap justify-content-around mb-2">
-            <div class="cajaEquipo">
-                <span class="fw-bold fs-5 text-uppercase">${equipo.modelo}</span>
+            <div id="cajaEquipo-${equipo.id_equipo}" class="cajaEquipo text-center">
                 <img src="img/${equipo.imagen}" alt="foto portatil">
-            </div>
-        </div>
-        `;
+                <span class="fw-bold fs-5 text-uppercase">${equipo.modelo}</span>
+            </div>`;
     });
 }
