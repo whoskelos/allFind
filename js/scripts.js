@@ -34,8 +34,8 @@ function pintarEquipos(lista) {
                 <div class="card-body">
                     <h5 class="card-title text-center">${equipo.modelo}</h5>
                     <p class="card-text"><strong>Precio: </strong>${equipo.precio}$</p>
-                    <p class="card-text"><strong>CPU: </strong>${equipo.cpu}$</p>
-                    <p class="card-text"><strong>RAM: </strong>${equipo.ram}$</p>
+                    <p class="card-text"><strong>CPU: </strong>${equipo.cpu}</p>
+                    <p class="card-text"><strong>RAM: </strong>${equipo.ram}</p>
                     <a href="#" class="btn btn-primary">Ver detalles</a>
                 </div>
             </div>`;
@@ -49,11 +49,13 @@ function pintarMasValorados() {
     let equiposMasValorados = listaEquipos.filter((ele) => ele.valoracion > 3);
     //localizo el div donde los voy a pintar
     let divMasValorados = document.getElementById("cajaEquiposValorados");
-    equiposMasValorados.forEach((equipo) => {
+    //con slice pinto solo los 3 primeros que me devuelve la lista filtrada de los mas valorados
+    equiposMasValorados.slice(0,3).forEach((equipo) => {
         divMasValorados.innerHTML += `
             <div id="cajaEquipo-${equipo.id_equipo}" class="cajaEquipo text-center">
-                <img src="img/${equipo.imagen}" alt="foto portatil">
-                <span class="fw-bold fs-5 text-uppercase">${equipo.modelo}</span>
+            <img src="img/${equipo.imagen}" alt="foto portatil">
+            <span class="fw-bold fs-5 text-uppercase">${equipo.modelo}</span>
+            <img src="/img/estrella.png" class="logoFav"></img>
             </div>`;
     });
 }

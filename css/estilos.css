@@ -41,3 +41,7 @@ body {
     border-radius: 15px;
     background: #ADE1FF;
 }
+
+.logoFav {
+    width: 50px !important;
+}
