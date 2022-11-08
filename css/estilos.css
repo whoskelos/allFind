@@ -45,3 +45,33 @@ body {
 .logoFav {
     width: 50px !important;
 }
+
+.img-vista-detallada {
+    width: 70% !important;
+}
+
+.card-subtitle {
+    font-size: 2em !important;
+}
+
+.tabs-equipo{
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones-equipo{
+    padding: 10px !important;
+    background: #509cfa !important;
+    color: #fff;
+    text-align: center;
+}
+.tabs {
+    display: flex;
+}
+.enlacesTab {
+    flex-grow: 2;
+    border-radius: 0px 10px 10px 0px !important;
+}
+.caracteristicasTab {
+    border-radius: 10px 0px 0px 10px !important;
+}

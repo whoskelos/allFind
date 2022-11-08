@@ -5,9 +5,13 @@ onload = () => {
     if (document.getElementById("masValorados")) {
         pintarMasValorados();
     }
-    document.getElementById("btn-rellenar-form").addEventListener("click",() => {
-        location.href = "/form-busqueda.html";
-    });
+    if (document.getElementById("btn-rellenar-form")) {
+        document
+        .getElementById("btn-rellenar-form")
+        .addEventListener("click", () => {
+            location.href = "/form-busqueda.html";
+        });
+    }
 };
 
 function cargarEquipos() {
@@ -15,6 +19,7 @@ function cargarEquipos() {
         $.get("/datos/equipos.txt", {}, (respuesta) => {
             listaEquipos = JSON.parse(respuesta);
             pintarEquipos(listaEquipos);
+            localStorage.setItem("datos", JSON.stringify(listaEquipos));
         });
     } else {
         listaEquipos = JSON.parse(localStorage.getItem("datos"));
@@ -30,18 +35,18 @@ function pintarEquipos(lista) {
         listaEquipos.forEach((equipo) => {
             divCentral.innerHTML += `
             <div class="card mb-3" style="width: 18rem;">
-                <img src="/img/${equipo.imagen}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title text-center">${equipo.modelo}</h5>
-                    <p class="card-text"><strong>Precio: </strong>${equipo.precio}$</p>
-                    <p class="card-text"><strong>CPU: </strong>${equipo.cpu}</p>
-                    <p class="card-text"><strong>RAM: </strong>${equipo.ram}</p>
-                    <a href="#" class="btn btn-primary">Ver detalles</a>
-                </div>
+            <img src="/img/${equipo.imagen}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-center">${equipo.modelo}</h5>
+            <p class="card-text"><strong>Precio: </strong>${equipo.precio}$</p>
+            <p class="card-text"><strong>CPU: </strong>${equipo.cpu}</p>
+            <p class="card-text"><strong>RAM: </strong>${equipo.ram}</p>
+            <a class="btn btn-primary" id="btn-verDetalles" onclick="verDetalleEquipo(${equipo.id_equipo})">Ver detalles</a>
+            
+            </div>
             </div>`;
         });
         //lo que he pintado lo guardo en localStorage
-        localStorage.setItem("datos", JSON.stringify(listaEquipos));
     }
 }
 
@@ -50,12 +55,15 @@ function pintarMasValorados() {
     //localizo el div donde los voy a pintar
     let divMasValorados = document.getElementById("cajaEquiposValorados");
     //con slice pinto solo los 3 primeros que me devuelve la lista filtrada de los mas valorados
-    equiposMasValorados.slice(0,3).forEach((equipo) => {
+    equiposMasValorados.slice(0, 3).forEach((equipo) => {
         divMasValorados.innerHTML += `
-            <div id="cajaEquipo-${equipo.id_equipo}" class="cajaEquipo text-center">
-            <img src="img/${equipo.imagen}" alt="foto portatil">
-            <span class="fw-bold fs-5 text-uppercase">${equipo.modelo}</span>
-            <img src="/img/estrella.png" class="logoFav"></img>
-            </div>`;
+        <div id="cajaEquipo-${equipo.id_equipo}" class="cajaEquipo text-center">
+        <img src="img/${equipo.imagen}" alt="foto portatil">
+        <span class="fw-bold fs-5 text-uppercase">${equipo.modelo}</span>
+        </div>`;
     });
+}
+
+function verDetalleEquipo(id){
+    location.href = "/vista-equipo.html?"+id;
 }
