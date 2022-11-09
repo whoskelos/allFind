@@ -23,7 +23,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "acer-aspire-3-a315.webp"
+	  "imagen": "acer-aspire-3-a315.webp",
+	  "enlace":"https://www.pccomponentes.com/acer-aspire-3-a315-58-79la-intel-core-i7-1165g7-16gb-512gb-ssd-156"
 	},
 	{
 	  "id_equipo": "002",
@@ -49,7 +50,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "pccom-revolt-one.webp"
+	  "imagen": "pccom-revolt-one.webp",
+	  "enlace":"https://www.pccomponentes.com/pccom-revolt-one-3050-intel-core-i5-11400h-16gb-512gb-ssd-rtx-3050-156-windows-11-home"
 	},
 	{
 	  "id_equipo": "003",
@@ -75,7 +77,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "lenovo-ideapad-3.webp"
+	  "imagen": "lenovo-ideapad-3.webp",
+	  "enlace":"https://www.pccomponentes.com/lenovo-ideapad-3-15itl6-intel-core-i5-1135g7-8gb-512gb-ssd-156-azul"
 	},
 	{
 	  "id_equipo": "004",
@@ -101,7 +104,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "hp-15s.webp"
+	  "imagen": "hp-15s.webp",
+	  "enlace":"https://www.pccomponentes.com/hp-15s-fq2134ns-intel-core-i3-1115g4-8gb-512gb-ssd-156"
 	},
 	{
 	  "id_equipo": "005",
@@ -127,7 +131,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "lenovo-ideapad-3-15itl6.webp"
+	  "imagen": "lenovo-ideapad-3-15itl6.webp",
+	  "enlace":"https://www.pccomponentes.com/lenovo-ideapad-3-15itl6-intel-core-i3-1115g4-8gb-256gb-ssd-156-azul?offer=01ccd709-2e45-4fe6-b4e3-e8697abdc89b"
 	},
 	{
 	  "id_equipo": "006",
@@ -153,7 +158,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "asus-tuf-gaming-a15.webp"
+	  "imagen": "asus-tuf-gaming-a15.webp",
+	  "enlace":"https://www.pccomponentes.com/asus-tuf-gaming-f15-tuf507rm-hn088-amd-ryzen-7-6800h-16gb-1tb-ssd-rtx-3060-156"
 	},
 	{
 	  "id_equipo": "007",
@@ -179,7 +185,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "arizone-frey-pc.webp"
+	  "imagen": "arizone-frey-pc.webp",
+	  "enlace":"https://www.pccomponentes.com/arizone-frey-pc-amd-ryzen-3-4100-16gb-1tb-ssd-gtx-1650"
 	},
 		{
 	  "id_equipo": "008",
@@ -205,7 +212,8 @@
 		  "comentario": "Muy buen equipo"
 		}
 	  ],
-	  "imagen": "pccom-platinum.webp"
+	  "imagen": "pccom-platinum.webp",
+	  "enlace":"https://www.pccomponentes.com/pccom-platinum-intel-core-i9-12900k-32gb-1tb-ssd-2tb-rtx3080"
 	}
 
   ]

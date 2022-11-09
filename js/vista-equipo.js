@@ -48,6 +48,8 @@ function pintarEquipo() {
 function mostrarCaracteristicas() {
     if (document.getElementsByClassName("txtEnlaces")[0]) {
         document.getElementsByClassName("txtEnlaces")[0].remove();
+        document.getElementsByClassName("enlacesTab")[0].classList.remove("TabSelected");
+        document.getElementsByClassName("caracteristicasTab")[0].classList.add("TabSelected");
     }
     if (!document.getElementsByClassName("txtCaracteristicas")[0]) {
         //guardo el id del equipo para buscarlo
@@ -62,17 +64,17 @@ function mostrarCaracteristicas() {
         nuevoDiv.innerHTML += `<ul>
             <li><strong>Sistema operativo:</strong> ${equipo.so}</li>
             <li><strong>CPU:</strong> ${equipo.cpu}</li>
-            <li>RAM: ${equipo.ram} GB</li>
-            <li>Almacenamiento: ${equipo.almacenamiento} GB</li>
+            <li><strong>RAM:</strong> ${equipo.ram} GB</li>
+            <li><strong>Almacenamiento:</strong> ${equipo.almacenamiento} GB</li>
         </ul>`;
     }
-    //cambio los estilos de la pestaña características
-    document.getElementsByClassName("caracteristicasTab")[0];
 }
 
 function mostrarEnlaces() {
     if (document.getElementsByClassName("txtCaracteristicas")[0]) {
         document.getElementsByClassName("txtCaracteristicas")[0].remove();
+        document.getElementsByClassName("caracteristicasTab")[0].classList.remove("TabSelected");
+        document.getElementsByClassName("enlacesTab")[0].classList.add("TabSelected");
     }
     if (!document.getElementsByClassName("txtEnlaces")[0]) {
         //guardo el id del equipo para buscarlo
@@ -85,7 +87,7 @@ function mostrarEnlaces() {
          tarjetaDatosEquipo.appendChild(nuevoDiv);
          nuevoDiv.className = "txtEnlaces";
          nuevoDiv.innerHTML = `<h3>Enlaces de compra</h3>
-            <p><a href="https://www.pccomponentes.com/pccom-revolt-one-3050-intel-core-i5-11400h-16gb-512gb-ssd-rtx-3050-156-windows-11-home">PC Componentes</a></p>
+            <p><a href="${equipo.enlace}" target="_blank">PC Componentes</a></p>
          `;
     }
     

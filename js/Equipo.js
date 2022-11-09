@@ -14,7 +14,7 @@ class Equipo{
         this.id_equipo = id_equipo || "ID no asignado";
         this.modelo = modelo || "Modelo no asignado";
         this.precio = precio || "Precio no asignado";
-        this.so = so || "Sin SO asignado";
+        this.so = so || "Sin SO";
         this.cpu = cpu || "CPU no asignada";
         this.ram = ram || "RAM no asignada";
         this.valoracion = valoracion || "Equipo sin valoraciones";

@@ -47,7 +47,7 @@ body {
 }
 
 .img-vista-detallada {
-    width: 70% !important;
+    width: 100% !important;
 }
 
 .card-subtitle {
@@ -70,8 +70,13 @@ body {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
 }
 .caracteristicasTab:hover{
+    background: #dadada !important;
+    color: rgb(79, 120, 241);
+}
+.TabSelected{
     background: #dadada !important;
     color: rgb(79, 120, 241);
 }

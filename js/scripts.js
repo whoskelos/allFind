@@ -40,13 +40,12 @@ function pintarEquipos(lista) {
             <h5 class="card-title text-center">${equipo.modelo}</h5>
             <p class="card-text"><strong>Precio: </strong>${equipo.precio}$</p>
             <p class="card-text"><strong>CPU: </strong>${equipo.cpu}</p>
-            <p class="card-text"><strong>RAM: </strong>${equipo.ram}</p>
+            <p class="card-text"><strong>RAM: </strong>${equipo.ram} GB</p>
             <a class="btn btn-primary" id="btn-verDetalles" onclick="verDetalleEquipo(${equipo.id_equipo})">Ver detalles</a>
             
             </div>
             </div>`;
         });
-        //lo que he pintado lo guardo en localStorage
     }
 }
 
