@@ -6,9 +6,9 @@
 	  "precio": "699",
 	  "so": "Windows 11",
 	  "cpu": "i7-1165G7",
-	  "ram": "16GB",
+	  "ram": "16",
 	  "valoracion": "3",
-	  "almacenamiento": "512GB",
+	  "almacenamiento": "512",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -32,9 +32,9 @@
 	  "precio": "994.90",
 	  "so": "Windows 11",
 	  "cpu": "i5-11400H",
-	  "ram": "16GB",
+	  "ram": "16",
 	  "valoracion": "4",
-	  "almacenamiento": "512GB",
+	  "almacenamiento": "512",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -58,9 +58,9 @@
 	  "precio": "519.99",
 	  "so": "Windows 11",
 	  "cpu": "i5-1135G7",
-	  "ram": "8GB",
+	  "ram": "8",
 	  "valoracion": "2",
-	  "almacenamiento": "512GB",
+	  "almacenamiento": "512",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -84,9 +84,9 @@
 	  "precio": "499",
 	  "so": "Windows 11",
 	  "cpu": "i3-1115G4",
-	  "ram": "8GB",
+	  "ram": "8",
 	  "valoracion": "3",
-	  "almacenamiento": "256GB",
+	  "almacenamiento": "256",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -110,9 +110,9 @@
 	  "precio": "419",
 	  "so": "Windows 11",
 	  "cpu": "i3-1115G4",
-	  "ram": "8GB",
+	  "ram": "8",
 	  "valoracion": "4.5",
-	  "almacenamiento": "256GB",
+	  "almacenamiento": "256",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -136,7 +136,7 @@
 	  "precio": "1799",
 	  "so": "",
 	  "cpu": "Ryzen 7 6800H",
-	  "ram": "16GB",
+	  "ram": "16",
 	  "valoracion": "5",
 	  "almacenamiento": "1TB",
 	  "opiniones": [
@@ -162,7 +162,7 @@
 	  "precio": "1098",
 	  "so": "Windows 11",
 	  "cpu": "Ryzen 3 4100",
-	  "ram": "16GB",
+	  "ram": "16",
 	  "valoracion": "0",
 	  "almacenamiento": "1TB",
 	  "opiniones": [
@@ -188,7 +188,7 @@
 	  "precio": "3884.67",
 	  "so": "",
 	  "cpu": "Intel Core i9-12900K",
-	  "ram": "32GB",
+	  "ram": "32",
 	  "valoracion": "4",
 	  "almacenamiento": "1TB",
 	  "opiniones": [

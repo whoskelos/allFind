@@ -2,6 +2,8 @@ var listaEquipos = [];
 onload = () => {
     cargarEquipos();
     pintarEquipo();
+    document.getElementsByClassName("opciones-equipo")[0].addEventListener("click",mostrarCaracteristicas);
+    document.getElementsByClassName("opciones-equipo")[1].addEventListener("click",mostrarEnlaces);
 };
 
 function cargarEquipos() {
@@ -16,10 +18,8 @@ function cargarEquipos() {
 }
 
 function pintarEquipo() {
-    let seccionMain = document.getElementsByTagName("main")[0];
     let idEquipo = window.location.href.split("?")[1];
     let equipo = listaEquipos.find((e) => e.id_equipo == "00" + idEquipo);
-    console.log(equipo);
     let divCentral = document.getElementById("central");
 
     divCentral.innerHTML = `
@@ -30,18 +30,63 @@ function pintarEquipo() {
             <div class="col-md-6 mt-3 d-flex justify-content-center">
                 <div class="tabs-equipo">
                     <div class="tabs">
-                        <div class="opciones-equipo caracteristicasTab">Características</div>
-                        <div class="opciones-equipo enlacesTab">Enlaces</div>
+                        <div class="opciones-equipo caracteristicasTab"><a>Características</a></div>
+                        <div class="opciones-equipo enlacesTab"><a>Enlaces</a></div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" id="tarjetaEquipo" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">${equipo.modelo}</h5>
                             <h6 class="card-subtitle mb-2 text-primary">${equipo.precio}€</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     `;
+}
+
+function mostrarCaracteristicas() {
+    if (document.getElementsByClassName("txtEnlaces")[0]) {
+        document.getElementsByClassName("txtEnlaces")[0].remove();
+    }
+    if (!document.getElementsByClassName("txtCaracteristicas")[0]) {
+        //guardo el id del equipo para buscarlo
+        let idEquipo = window.location.href.split("?")[1];
+        let equipo = listaEquipos.find((e) => e.id_equipo == "00" + idEquipo);
+        //Creo el nuevo div
+        let nuevoDiv = document.createElement("div");
+        //busco el div de la tarjeta del equipo
+        let tarjetaDatosEquipo = document.getElementById("tarjetaEquipo");
+        tarjetaDatosEquipo.appendChild(nuevoDiv);
+        nuevoDiv.className = "txtCaracteristicas";
+        nuevoDiv.innerHTML += `<ul>
+            <li><strong>Sistema operativo:</strong> ${equipo.so}</li>
+            <li><strong>CPU:</strong> ${equipo.cpu}</li>
+            <li>RAM: ${equipo.ram} GB</li>
+            <li>Almacenamiento: ${equipo.almacenamiento} GB</li>
+        </ul>`;
+    }
+    //cambio los estilos de la pestaña características
+    document.getElementsByClassName("caracteristicasTab")[0];
+}
+
+function mostrarEnlaces() {
+    if (document.getElementsByClassName("txtCaracteristicas")[0]) {
+        document.getElementsByClassName("txtCaracteristicas")[0].remove();
+    }
+    if (!document.getElementsByClassName("txtEnlaces")[0]) {
+        //guardo el id del equipo para buscarlo
+        let idEquipo = window.location.href.split("?")[1];
+        let equipo = listaEquipos.find((e) => e.id_equipo == "00" + idEquipo);
+         //Creo el nuevo div
+         let nuevoDiv = document.createElement("div");
+         //busco el div de la tarjeta del equipo
+         let tarjetaDatosEquipo = document.getElementById("tarjetaEquipo");
+         tarjetaDatosEquipo.appendChild(nuevoDiv);
+         nuevoDiv.className = "txtEnlaces";
+         nuevoDiv.innerHTML = `<h3>Enlaces de compra</h3>
+            <p><a href="https://www.pccomponentes.com/pccom-revolt-one-3050-intel-core-i5-11400h-16gb-512gb-ssd-rtx-3050-156-windows-11-home">PC Componentes</a></p>
+         `;
+    }
+    
 }

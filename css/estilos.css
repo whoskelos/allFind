@@ -65,6 +65,22 @@ body {
     color: #fff;
     text-align: center;
 }
+
+.opciones-equipo a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.caracteristicasTab:hover{
+    background: #dadada !important;
+    color: rgb(79, 120, 241);
+}
+
+.enlacesTab:hover{
+    background: #dadada !important;
+    color: rgb(79, 120, 241);
+}
+
 .tabs {
     display: flex;
 }
@@ -74,4 +90,11 @@ body {
 }
 .caracteristicasTab {
     border-radius: 10px 0px 0px 10px !important;
+}
+
+.txtCaracteristicas{
+    padding: 7px;
+}
+.txtEnlaces {
+    text-align: center;
 }
