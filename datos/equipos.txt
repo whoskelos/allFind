@@ -9,6 +9,7 @@
 	  "ram": "16",
 	  "valoracion": "3",
 	  "almacenamiento": "512",
+	  "tipo": "music",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -36,6 +37,7 @@
 	  "ram": "16",
 	  "valoracion": "4",
 	  "almacenamiento": "512",
+	  "tipo": "Gaming",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -63,6 +65,7 @@
 	  "ram": "8",
 	  "valoracion": "2",
 	  "almacenamiento": "512",
+	  "tipo": "office",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -90,6 +93,7 @@
 	  "ram": "8",
 	  "valoracion": "3",
 	  "almacenamiento": "256",
+	  "tipo": "multi",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -117,6 +121,7 @@
 	  "ram": "8",
 	  "valoracion": "4.5",
 	  "almacenamiento": "256",
+	  "tipo": "office",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -144,6 +149,7 @@
 	  "ram": "16",
 	  "valoracion": "5",
 	  "almacenamiento": "1TB",
+	  "tipo": "gaming",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -171,6 +177,7 @@
 	  "ram": "16",
 	  "valoracion": "0",
 	  "almacenamiento": "1TB",
+	  "tipo": "3D",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
@@ -198,6 +205,7 @@
 	  "ram": "32",
 	  "valoracion": "4",
 	  "almacenamiento": "1TB",
+	  "tipo": "FX",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
