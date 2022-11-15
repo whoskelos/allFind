@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 body {
+    display: block;
+    height: 100vh !important;
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -108,4 +110,10 @@ body {
     font-size: 2.5em;
     color: #ff0000;
     text-align: center;
+}
+
+.footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
 }
