@@ -103,3 +103,9 @@ body {
 .txtEnlaces {
     text-align: center;
 }
+
+.errorFiltro {
+    font-size: 2.5em;
+    color: #ff0000;
+    text-align: center;
+}

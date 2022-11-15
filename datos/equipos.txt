@@ -149,7 +149,7 @@
 	  "ram": "16",
 	  "valoracion": "5",
 	  "almacenamiento": "1TB",
-	  "tipo": "gaming",
+	  "tipo": "edition",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
