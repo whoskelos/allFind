@@ -21,7 +21,6 @@ function pintarEquipo() {
     let idEquipo = window.location.href.split("?")[1];
     let equipo = listaEquipos.find((e) => e.id_equipo == "00" + idEquipo);
     let divCentral = document.getElementById("central");
-    console.log(equipo);
 
     divCentral.innerHTML = `
         <div class="row mt-5">
@@ -43,10 +42,16 @@ function pintarEquipo() {
                 </div>
                 </div>
             <div class="col mt-3">
-                <h2 class="text-center">Opiniones</h2>
+                <h2 class="text-center my-3">Opiniones</h2>
+                <hr>
                 <div class="cajaOpiniones">
-                    <h4 class="userOpinion">${equipo.opiniones[0].usuario}</h4>
-                    <p class="txtOpinion">${equipo.opiniones[0].comentario}</p>
+                    <div class="userPic">
+                        <img src="../img/user.png"></img>
+                        <div class="userName">${equipo.opiniones[0].usuario}</div>
+                    </div>
+                    <div class="userOpinion">
+                        <p class="txtOpinion">"${equipo.opiniones[0].comentario}"</p>
+                    </div>
                 </div>
             </div>
         </div>

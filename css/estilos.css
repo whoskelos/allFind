@@ -118,3 +118,27 @@ body {
     bottom: 0 !important;
     width: 100% !important;
 }
+
+/* vista equipo */
+
+.cajaOpiniones {
+    padding: 6px;
+}
+
+.userName {
+    font-weight: bold;
+    padding: 6px;
+}
+.userPic {
+    display: flex;
+    align-items: center;
+}
+
+.userPic img {
+    width: 35px;
+    margin: 6px;
+}
+
+.txtOpinion{
+    font-style: italic;
+}
