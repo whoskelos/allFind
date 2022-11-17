@@ -177,7 +177,7 @@
 	  "ram": "16",
 	  "valoracion": "0",
 	  "almacenamiento": "1TB",
-	  "tipo": "3D",
+	  "tipo": "fx",
 	  "opiniones": [
 		{
 		  "id_opinion": "001",
