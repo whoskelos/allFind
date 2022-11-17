@@ -16,7 +16,6 @@ function filtrarEquipo() {
     let optTipo = document.getElementById("prefEquipo").value; // si es portatil o sobremesa
     let optPrecio = document.getElementById("presupuesto").value; //rango de precio en el que se encuentra
     optPrecio = optPrecio.split("-");
-    console.log(optPrecio);
 
     //declaramos flag $errror = false;
     let error = false;
@@ -37,23 +36,7 @@ function filtrarEquipo() {
     if (!error) {
         //filtro la lista en base a lo que el cliente selecciona en los select
         let listaFiltrada = listaEquipos
-            .filter(
-                (equipo) =>
-                    equipo.tipo.toLowerCase() == optActividad.toLowerCase()
-            )
-            .filter(
-                (ele) => ele.portatil.toLowerCase() == optTipo.toLowerCase()
-            )
-            .filter((ele) => {
-                if (
-                    (parseFloat(ele.precio) >= parseFloat(optPrecio[0]) &&
-                    parseFloat(ele.precio) <= parseFloat(optPrecio[1])) ||
-                    parseFloat(ele.precio) > parseFloat(optPrecio[0])
-                ) {
-                    return 1;
-                }
-                return 0;
-            });
+            .filter((equipo) => equipo.tipo.toLowerCase() == optActividad.toLowerCase() && equipo.portatil == optTipo && (parseFloat(equipo.precio) >= parseFloat(optPrecio[0]) && parseFloat(equipo.precio) <= parseFloat(optPrecio[1])));
 
         //compruebo si el array esta vacio para mostrar mensaje de no se han encontrado coincidencias o pintar los equipos filtrados
         if (listaFiltrada.length <= 0) {
@@ -81,7 +64,7 @@ function filtrarEquipo() {
                                 <img src="/img/${equipo.imagen}" class="card-img-top" alt="${equipo.modelo}">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">${equipo.modelo}</h5>
-                                    <p class="card-text"><strong>Precio: </strong>${equipo.precio}$</p>
+                                    <p class="card-text"><strong>Precio: </strong>${equipo.precio}€</p>
                                     <p class="card-text"><strong>CPU: </strong>${equipo.cpu}</p>
                                     <p class="card-text"><strong>RAM: </strong>${equipo.ram} GB</p>
                                     <a class="btn btn-primary" id="btn-verDetalles" onclick="verDetalleEquipo(${equipo.id_equipo})">Ver detalles</a>
