@@ -16,7 +16,7 @@
 		"nombre": "Miguel",
 		"apellidos": "Mite",
 		"admin": "false",
-		"foto": "",
+		"foto": "user.png",
 		"fecha_alta": ""
 	}
 ]

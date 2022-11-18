@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico" />
     <title>Panel de Admin</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <script src="./js/panelAdmin.js"></script>
+    <script src="./js/panelAdmin.js"></script>
 </head>
 
 <body>
@@ -51,10 +51,31 @@
 
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-center">Panel de Administracion</h1>
+            <div class="row flex-column">
+                <div class="col titulo">
+                    <h1 class="text-center my-2">Panel de Administracion</h1>
                 </div>
+                <div class="col d-flex flex-wrap justify-content-center justify-content-md-start">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="./img/gestionEquipos.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestion Equipos</h5>
+                            <p class="card-text">Anade,elimina o edita equipos</p>
+                            <a href="#" id="verEquipos" class="btn btn-primary">Ver Equipos</a>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 18rem;">
+                        <img src="./img/gestionUsuarios.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestion Usuarios</h5>
+                            <p class="card-text">Anade,elimina o edita usuarios</p>
+                            <a href="#" id="verUsuarios" class="btn btn-primary">Ver usuarios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-md-flex justify-content-start justify-content-md-center" id="vistaEquiposUsuarios"></div>
             </div>
         </div>
     </main>

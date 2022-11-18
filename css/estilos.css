@@ -207,3 +207,27 @@ body {
 #divFavorito img {
     width: 30px;
 }
+
+.imgEquipo {
+    width: 100px;
+}
+
+.imgBtn {
+    width: 30px;
+}
+
+#tabla {
+    border: 1px solid #509cfa;
+}
+#tabla tr td {
+    border: 2px solid #509cfa;
+}
+#tabla th {
+    background: #6dacf8;
+    color: #fff;
+    text-align: center;
+}
+#tabla td {
+    background: #9fcaff;
+    color: #fff;
+}
