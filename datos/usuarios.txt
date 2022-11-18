@@ -1,0 +1,22 @@
+[
+	{
+		"id_usuario": "1",
+		"username": "@kelvin",
+		"password":"kelvin",
+		"nombre": "Kelvin Miguel",
+		"apellidos": "Guerrero Mite",
+		"admin": "true",
+		"foto": "kelvin.jpg",
+		"fecha_alta": ""
+	},
+	{
+		"id_usuario": "2",
+		"username": "@miguel",
+		"password":"miguel",
+		"nombre": "Miguel",
+		"apellidos": "Mite",
+		"admin": "false",
+		"foto": "",
+		"fecha_alta": ""
+	}
+]

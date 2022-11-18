@@ -1,4 +1,5 @@
 var listaEquipos = []; //array de los equipos
+var usuarioLogueado = sessionStorage.getItem("usuarioLogueado");
 
 onload = () => {
     cargarEquipos();
@@ -12,6 +13,7 @@ onload = () => {
             location.href = "/form-busqueda.html";
         });
     }
+    estaLogueado();
 };
 
 function cargarEquipos() {
@@ -65,4 +67,23 @@ function pintarMasValorados() {
 
 function verDetalleEquipo(id){
     location.href = "/vista-equipo.html?"+id;
+}
+
+function estaLogueado() {
+    if (usuarioLogueado) {
+        document.getElementById("enlaceLogin").remove();
+        generarBtnLogout();
+    }
+}
+
+function generarBtnLogout() {
+    document.getElementById("enlacesNavbar").innerHTML += `
+    <li class="nav-item"><a class="nav-link disabled">${usuarioLogueado}</a></li>
+    <button type="button" class="btn btn-danger btn-sm my-2" onclick="cerrarSesion()">Cerrar sesion</button>
+    `;
+}
+
+function cerrarSesion() {
+    sessionStorage.removeItem("usuarioLogueado");
+    location.href = "/login.html";
 }

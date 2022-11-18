@@ -1,27 +1,25 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="/img/favicon.ico" />
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+    <title>Panel de Admin</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="/js/scripts.js"></script>
-    <script src="js/vista-equipo.js"></script>
+        <script src="./js/panelAdmin.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="#">
                     <img src="img/lupa_00.png" alt="logo allFind" width="50">
                     AllFind
                 </a>
@@ -37,13 +35,13 @@
                                     class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Equipos</a>
+                            <a class="nav-link" href="/equipos.html">Equipos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="enlaceLogin" href="#">Login</a>
+                        <li class="nav-item" id="enlaceLogin">
+                            <a class="nav-link" href="/login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -51,9 +49,13 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main>
         <div class="container">
-            <div id="central"></div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Panel de Administracion</h1>
+                </div>
+            </div>
         </div>
     </main>
 

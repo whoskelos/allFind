@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="/js/scripts.js"></script>
+    <!-- <script src="/js/usuarioLogueado.js"></script> -->
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0" id="enlacesNavbar">
                         <li class="nav-item">
                             <a class="nav-link active" href="#" aria-current="page">Home <span
                                     class="visually-hidden">(current)</span></a>
@@ -40,8 +41,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                        <li class="nav-item" id="enlaceLogin">
+                            <a class="nav-link" href="/login.html">Login</a>
                         </li>
                     </ul>
                 </div>

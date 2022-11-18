@@ -1,23 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="/img/favicon.ico" />
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+    <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="/js/scripts.js"></script>
-    <script src="js/vista-equipo.js"></script>
+    <script src="/js/login.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
             <div class="container-fluid">
@@ -31,19 +29,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0" id="enlacesNavbar">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="/index.html" aria-current="page">Home <span
                                     class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Equipos</a>
+                            <a class="nav-link" href="/equipos.html">Equipos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="enlaceLogin" href="#">Login</a>
+                            <a class="nav-link active" href="#">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -51,9 +49,30 @@
         </nav>
     </header>
 
-    <main class="main">
-        <div class="container">
-            <div id="central"></div>
+    <main>
+        <div class="container contenedor-login">
+            <div class="row">
+                <div class="col">
+                    <div class="cajaLogin">
+                        <div class="imgLogin">
+                            <img src="/img/user.png" alt="logo login">
+                        </div>
+                        <form action="" class="form">
+                            <div class="inputUsuario">
+                                <input type="text" id="txtUser" placeholder="@kelvin" required>
+                            </div>
+                            <div class="inputPasswd">
+                                <input type="password" id="txtPasswd" placeholder="******" required>
+                            </div>
+                            <div class="botones">
+                                <button type="button" id="btnLogin" class="btn btn-primary">Entrar</button>
+                                <button type="reset" class="btn btn-danger">Limpiar</button>
+                            </div>
+                        </form>
+                        <div class="mensajeError" id="msgError"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

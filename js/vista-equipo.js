@@ -1,9 +1,11 @@
 var listaEquipos = [];
+var usuarioLogueado = sessionStorage.getItem("usuarioLogueado");
 onload = () => {
     cargarEquipos();
     pintarEquipo();
     document.getElementsByClassName("opciones-equipo")[0].addEventListener("click",mostrarCaracteristicas);
     document.getElementsByClassName("opciones-equipo")[1].addEventListener("click",mostrarEnlaces);
+    marcarFavorito();
 };
 
 function cargarEquipos() {
@@ -27,7 +29,7 @@ function pintarEquipo() {
             <div class="col-md-6 d-flex justify-content-center">
                 <img src="img/${equipo.imagen}" class="img-vista-detallada"></img>
             </div>
-            <div class="col-md-6 mt-3 d-flex justify-content-center">
+            <div class="col-md-6 mt-3 d-flex justify-content-center align-items-center flex-column">
                 <div class="tabs-equipo">
                     <div class="tabs">
                         <div class="opciones-equipo caracteristicasTab"><a>Características</a></div>
@@ -40,7 +42,8 @@ function pintarEquipo() {
                         </div>
                     </div>
                 </div>
-                </div>
+                <div class="my-2" id="divFavorito"></div>
+            </div>
             <div class="col mt-3">
                 <h2 class="text-center my-3">Opiniones</h2>
                 <hr>
@@ -49,7 +52,7 @@ function pintarEquipo() {
                         <img src="../img/user.png"></img>
                         <div class="userName">${equipo.opiniones[0].usuario}</div>
                     </div>
-                    <div class="userOpinion">
+                    <div id="userOpinion">
                         <p class="txtOpinion">"${equipo.opiniones[0].comentario}"</p>
                     </div>
                 </div>
@@ -104,4 +107,19 @@ function mostrarEnlaces() {
          `;
     }
     
+}
+
+function marcarFavorito() {
+    if (usuarioLogueado) {
+        document.getElementById("enlaceLogin").remove();
+        generarBtnLogout();
+        document.getElementById("divFavorito").innerHTML+=`<img src="/img/favorito.png"></img>`;
+    }
+}
+
+function generarBtnLogout() {
+    document.getElementById("enlacesNavbar").innerHTML += `
+    <li class="nav-item"><a class="nav-link disabled">${usuarioLogueado}</a></li>
+    <button type="button" class="btn btn-danger btn-sm my-2" onclick="cerrarSesion()">Cerrar sesion</button>
+    `;
 }
