@@ -35,6 +35,7 @@ function comprobarUsuario() {
     //expresion regular para comprobar que el campo username sea el correcto
     let patronUsername = /^@[a-z_0-9]+$/;
 
+    //variable que nos sirve como una flag 
     let error = false;
     //comprobamos que los campos no esten vacios
     if (inputUser.value == "" || inputPasswd.value == "") {
@@ -67,7 +68,7 @@ function iniciarSesion(user, pass) {
         if (user.password == pass) {
             divErrores.innerHTML = ``;
             //gurdamos en una sesion al usuario
-            sessionStorage.setItem("usuarioAdmin",user.username);
+            sessionStorage.setItem("usuarioLogueado",user.username);
             //redirigimos al panel de admin
             location.href = "/panelAdmin.html";
         } else {

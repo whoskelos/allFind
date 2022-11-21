@@ -1,6 +1,6 @@
 var listaUsuarios = JSON.parse(localStorage.getItem("usuarios"));
 var listaEquipos = JSON.parse(localStorage.getItem("datos"));
-var usuarioLogueado = sessionStorage.getItem("usuarioAdmin");
+var usuarioLogueado = sessionStorage.getItem("usuarioLogueado");
 
 onload = () => {
     document.getElementById("enlaceLogin").remove();
